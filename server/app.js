@@ -1,6 +1,8 @@
 import express from "express";
 import dotenv from "dotenv";
 import { connectDB } from "./config/db.js";
+import authRoutes from './routes/auth.route.js';
+
 
 // dotenv
 
@@ -10,6 +12,8 @@ const app = express();
 const PORT = process.env.PORT || 3000
 
 app.use(express.json());
+
+app.use("/api/auth", authRoutes);
 
 // testing api using postman
 
