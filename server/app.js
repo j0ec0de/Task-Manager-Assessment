@@ -13,6 +13,7 @@ const PORT = process.env.PORT || 3000
 
 app.use(express.json());
 
+// api route for auth
 app.use("/api/auth", authRoutes);
 
 // testing api using postman
