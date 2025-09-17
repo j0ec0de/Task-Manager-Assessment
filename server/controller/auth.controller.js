@@ -81,8 +81,7 @@ export const userLogin = async(req, res) => {
         console.log("user: "+user);
         console.log("user logged in successfully: ",user.email);
 
-        
-
+    
         
     } catch (error) {
         console.error("Error in logging in ",error.message);

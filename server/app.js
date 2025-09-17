@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import { connectDB } from "./config/db.js";
 import authRoutes from './routes/auth.route.js';
+import taskRoutes from './routes/task.route.js';
 
 
 // dotenv
@@ -15,6 +16,7 @@ app.use(express.json());
 
 // api route for auth
 app.use("/api/auth", authRoutes);
+app.use("/api/tasks", taskRoutes);
 
 // testing api using postman
 
