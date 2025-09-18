@@ -13,5 +13,18 @@ Clone the repo
 git clone https://github.com/j0ec0de/Task-Manager-Assessment.git
 ``
 
+-Step 2
 
+Install dependencies
 
+```
+cd client
+npm install
+```
+
+```
+cd server
+npm install
+```
+
+-Step 3
