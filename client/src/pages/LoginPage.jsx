@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const [formData, setFormData] = useState({ email: '', password: '' });
@@ -20,12 +20,17 @@ const Login = () => {
     };
 
     return (
+        <>
+            <Link to="/">
+            <button className='back-btn'>Back</button>
+            </Link>
         <form onSubmit={onSubmit}>
             <h2>Login</h2>
             <input type="email" name="email" placeholder="Email" onChange={onChange} required />
             <input type="password" name="password" placeholder="Password" onChange={onChange} required />
             <button type="submit">Login</button>
         </form>
+        </>
     );
 };
 
