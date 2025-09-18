@@ -9,9 +9,11 @@ Make sure to have the latest version of node installed.
 - Step 1
 Clone the repo
 
-``
+```
 git clone https://github.com/j0ec0de/Task-Manager-Assessment.git
-``
+
+cd Task-Manager-Assessment
+```
 
 - Step 2
 
@@ -29,17 +31,16 @@ npm install
 
 - Step 3
 
-In the server folder , you need an env file which consists of values
+In the server folder , you need an .env file which consists of values
 
-PORT
-
-MONGO_URI (get the connection string from mongodb and add your username and password)
-
-NODE_ENV (set to development)
-
-JWT_COOKIE_EXPIRES (7)
-
-JWT_SECRET (of your choice)
+```
+# .env.example
+PORT=5000
+MONGO_URI=YOUR_MONGODB_CONNECTION_STRING
+NODE_ENV=development
+JWT_SECRET=your_super_secret_jwt_key
+JWT_COOKIE_EXPIRES=7
+```
 
 - Step 4
 
